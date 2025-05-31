@@ -1,0 +1,307 @@
+<!doctype html>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+
+
+    <div class="container mx-auto p-4 relative z-10">
+        <header class="text-center my-8">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/011/307/321/small_2x/tether-usdt-badge-crypto-isolated-on-white-background-blockchain-technology-3d-rendering-free-png.png" 
+ alt="USDT logo" class="mx-auto mb-4 w-24" />
+            <h1 class="text-4xl font-bold text-blue-600">SPLASH</h1>
+               <center><a href="https://splashusdt.github.io/Task/"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhczInIuG_W0GAmEG8fK2fjWU083OlWn0dvuG0vRr8gDMLda8a6Hokaa9ucKrkSuziUkuxwcque1Bv7ri6Yp-wFZGW_rfJNtnQICdkOTdk9LhutmByaHuk8I6BL8xkMx0gWoiUTD-q7NvyoZeuhOnknODTf6Eu_hsfyti9UWuIGoGmkReBOdK9o5BlETgju/s432/IMG_20250527_112216.png" /></a></center>     
+        <div class="bg-white shadow-md rounded-lg p-6 max-w-lg mx-auto">
+            <form id="usdtForm">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" required 
+ class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="network">Network</label>
+                    <select id="network" name="network" required 
+                            class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        <option value="TRC20" />BEP20
+                        <option value="BEP20" />TRC20
+                        <option value="ERC20" />ERC20
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="address">Wallet Address</label>
+                    <input type="text" id="address" name="address" required 
+ class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                </div>
+                <button type="submit" 
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    WITHDRAW
+                </button>
+            </form>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6 max-w-lg mx-auto mt-8">
+            <h2 class="text-2xl font-bold mb-4">Buy License Key</h2>
+            <p class="text-gray-700 mb-4">To activate it, Copy the USDT BEP20 wallet address below and make your payment and click on I Have Paid.</p>
+            <p class="text-gray-700 font-bold mb-4 break-words"><p style="color:red;"><font size="4">0x5cb375eece2884474a16416bb237d343108c0bc4</font></p>
+            <p class="text-gray-600 text-sm"><p style="color:blue;"><font size="4">Silver Activation: 12 USDT
+            <br>Gold Activation: 30 USDT
+            <br>Diamond Activation: 60 USDT</font></p>
+
+            <button id="confirmPayment" 
+                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4">
+                I Have Paid
+            </button>
+            <div id="paymentMessage" class="text-green-500 font-bold mt-4 hidden">Verifying payment...</div>
+        </p></p></div>
+
+        <footer class="text-center mt-8">
+            <div class="bg-gray-800 text-white py-4">
+                <marquee behavior="scroll" direction="left" class="text-sm">
+                    <span class="mx-4">Silver daily income is 2 USDT.</span>
+                    <span class="mx-4">Gold daily income is 5 USDT.</span>
+                    <span class="mx-4">Diamond daily income is 10 USDT.</span>
+                    <span class="mx-4">User: Received 2 USDT another user received 5 USDT another user receive 10 USDT.</span>
+                    <span class="mx-4">Tasks update time is 9:AM.</span>
+                </marquee>
+    </div>
+
+    <script>
+        document.getElementById('usdtForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Processing... If you did not receive it in 10 to 20 minutes, contact us by clicking on the blue message icon.');
+        });
+
+        document.getElementById('confirmPayment').addEventListener('click', function() {
+            document.getElementById('paymentMessage').classList.remove('hidden');
+        });
+    </script>
+    <div class="formbold-main-wrapper">
+  <!--Author: FormBold Team-->
+  <!--Learn More: https://formbold.com-->
+  <div class="w-full">
+    <div class="formbold-form-wrapper">
+      <div class="formbold-form-header">
+        <h3>Contact Us</h3>
+        <button onclick="chatboxToogleHandler()">
+          <svg fill="white" height="17" viewbox="0 0 17 17" width="17">
+            <path clip-rule="evenodd" d="M0.474874 0.474874C1.10804 -0.158291 2.1346 -0.158291 2.76777 0.474874L16.5251 14.2322C17.1583 14.8654 17.1583 15.892 16.5251 16.5251C15.892 17.1583 14.8654 17.1583 14.2322 16.5251L0.474874 2.76777C-0.158291 2.1346 -0.158291 1.10804 0.474874 0.474874Z" fill-rule="evenodd">
+            <path clip-rule="evenodd" d="M0.474874 16.5251C-0.158291 15.892 -0.158291 14.8654 0.474874 14.2322L14.2322 0.474874C14.8654 -0.158292 15.892 -0.158291 16.5251 0.474874C17.1583 1.10804 17.1583 2.1346 16.5251 2.76777L2.76777 16.5251C2.1346 17.1583 1.10804 17.1583 0.474874 16.5251Z" fill-rule="evenodd">
+          </path></path></svg>
+        </button>
+      </div>
+      <form --="" access="" action="https://api.web3forms.com/submit" key="" method="POST" replace="" with="" your="">
+  <input name="access_key" type="hidden" value="c39f5151-7aea-4a3a-ac5b-0a0066a50c39" />
+        
+        <div class="formbold-mb-5">
+          <label class="formbold-form-label">Your Wallet Address</label>
+          <input class="formbold-form-input" id="name" name="name" type="text" />
+        </div>
+        
+        <div class="formbold-mb-5">
+          <label class="formbold-form-label">BEP20. TRC20. ERC20</label>
+          <input class="formbold-form-input" id="network" name="network" type="text" />
+        </div>
+
+        <div class="formbold-mb-5">
+          <label class="formbold-form-label">Email Address</label>
+          <input class="formbold-form-input" id="email" name="email" type="email" />
+        </div>
+
+        <div class="formbold-mb-5">
+          <label class="formbold-form-label">Message</label>
+          <textarea class="formbold-form-input" id="message" name="message" rows="6"></textarea>
+        </div>
+
+        <div>
+        <!--Custom Confirmation / Success Page-->
+    <input name="redirect" type="hidden" value="https://splashusdt.github.io/Sp/" />
+          <button class="formbold-btn w-full">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+    <div class="formbold-action-buttons">
+      <button class="formbold-action-btn" onclick="chatboxToogleHandler()">
+        <span class="formbold-cross-icon">
+          <svg fill="none" height="17" viewbox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M0.474874 0.474874C1.10804 -0.158291 2.1346 -0.158291 2.76777 0.474874L16.5251 14.2322C17.1583 14.8654 17.1583 15.892 16.5251 16.5251C15.892 17.1583 14.8654 17.1583 14.2322 16.5251L0.474874 2.76777C-0.158291 2.1346 -0.158291 1.10804 0.474874 0.474874Z" fill-rule="evenodd" fill="white">
+            <path clip-rule="evenodd" d="M0.474874 16.5251C-0.158291 15.892 -0.158291 14.8654 0.474874 14.2322L14.2322 0.474874C14.8654 -0.158292 15.892 -0.158291 16.5251 0.474874C17.1583 1.10804 17.1583 2.1346 16.5251 2.76777L2.76777 16.5251C2.1346 17.1583 1.10804 17.1583 0.474874 16.5251Z" fill-rule="evenodd" fill="white">
+          </path></path></svg>
+        </span>
+        <span class="formbold-chat-icon">
+          <svg fill="none" height="28" viewbox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.8333 14.0002V3.50016C19.8333 3.19074 19.7103 2.894 19.4915 2.6752C19.2728 2.45641 18.976 2.3335 18.6666 2.3335H3.49992C3.1905 2.3335 2.89375 2.45641 2.67496 2.6752C2.45617 2.894 2.33325 3.19074 2.33325 3.50016V19.8335L6.99992 15.1668H18.6666C18.976 15.1668 19.2728 15.0439 19.4915 14.8251C19.7103 14.6063 19.8333 14.3096 19.8333 14.0002ZM24.4999 7.00016H22.1666V17.5002H6.99992V19.8335C6.99992 20.1429 7.12284 20.4397 7.34163 20.6585C7.56042 20.8772 7.85717 21.0002 8.16659 21.0002H20.9999L25.6666 25.6668V8.16683C25.6666 7.85741 25.5437 7.56066 25.3249 7.34187C25.1061 7.12308 24.8093 7.00016 24.4999 7.00016Z" fill="white">
+          </path></svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .formbold-form-wrapper.active {
+    display: block;
+  }
+
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .formbold-form-header {
+    background: #6a64f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 36px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .formbold-form-header h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+  }
+  .formbold-form-header button {
+    color: white;
+    background: transparent;
+    border: none;
+  }
+  .formbold-chatbox-form {
+    padding: 32px 36px;
+  }
+  .formbold-action-buttons {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 48px;
+  }
+  .formbold-action-btn {
+    width: 70px;
+    height: 70px;
+    background: #6a64f1;
+    color: white;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formbold-action-btn .formbold-cross-icon {
+    display: none;
+  }
+
+  .formbold-action-btn.active .formbold-cross-icon {
+    display: block;
+  }
+
+  .formbold-action-btn.active .formbold-chat-icon {
+    display: none;
+  }
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+</style>
+<script>
+  const formWrapper = document.querySelector(".formbold-form-wrapper");
+  const formActionButton = document.querySelector(".formbold-action-btn");
+  function chatboxToogleHandler() {
+    formWrapper.classList.toggle("active");
+    formActionButton.classList.toggle("active");
+  }
+</script>
+</footer></header></div>
+</!doctype>
